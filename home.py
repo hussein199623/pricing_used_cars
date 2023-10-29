@@ -8,7 +8,7 @@ def app():
 # Apply CSS styling to center the title
   
 
-   st.image('../photo.jpg', width=500,use_column_width=True)
+   st.image('photo.jpg', width=500,use_column_width=True)
    st.subheader("***'We have a data about the price for used cars and we got it from site for selling used cars'***")
        
 
