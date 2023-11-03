@@ -11,14 +11,15 @@ def app():
     st.subheader('We have a dataset about price of used cars ')
     data=st.button('Show data')
     df = pd.read_csv("new_data_cars.csv")
+    st.write('I used model DecsisionTree, I achieved 92% accuracy)
     if data :
-        st.write('Here are 10 rows of the data to give you fast intution')
+        st.write('Here are 10 rows of the data to give you fast intuition)
         st.dataframe(df.sample(10))
     
-    meta_data = st.button('Meta data & Description of the data')
+    meta_data = st.button('Metadata & Description of the data')
    
 
-    descreption = {'manufacturer': 'name of the car manufacturer',
+    description = {'manufacturer': 'name of the car manufacturer',
     'model': 'name of the car model',
     'year': 'the year when the car was produced',
     'mileage': 'the number of miles the car has traveled since production',
@@ -34,10 +35,10 @@ def app():
     'personal use only': 'whether the car was used only for personal purposes',
     'seller name': 'name of the seller',
     'seller rating': "seller's rating",
-    'driver rating': 'car rating given by drivers',
+    'driver rating': 'car rating is given by drivers',
     'driver reviews num': 'the number of car reviews left by drivers',
     'price drop': 'price reduction from the initial price',
     'price': 'car price'}
     if meta_data:
-        st.write('Columns descripion ')
-        st.table(descreption)
+        st.write('Columns description ')
+        st.table(description)
