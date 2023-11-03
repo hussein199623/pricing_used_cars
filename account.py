@@ -11,3 +11,4 @@ def app():
     github = st.button('Github')
     if github:
         st.write('https://github.com/hussein199623')
+    st.image('photo2.jpg', width=500,use_column_width=True)
