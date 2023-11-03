@@ -11,9 +11,9 @@ def app():
     st.subheader('We have a dataset about price of used cars ')
     data=st.button('Show data')
     df = pd.read_csv("new_data_cars.csv")
-    st.write('I used model DecsisionTree, I achieved 92% accuracy)
+    st.subheader('I used model DecsisionTree, I achieved 92% accuracy')
     if data :
-        st.write('Here are 10 rows of the data to give you fast intuition)
+        st.write('Here are 10 rows of the data to give you fast intuition')
         st.dataframe(df.sample(10))
     
     meta_data = st.button('Metadata & Description of the data')
