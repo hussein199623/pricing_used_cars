@@ -9,8 +9,7 @@ st.set_page_config(
 )
 pages = ['Home', 'Account', 'About', 'Analysis', 'Prediction']
 
-# Get the selected page from the URL parameter
-selected_page = st.experimental_get_query_params().get('page', ['Home'])[0]
+
 
 class MultiApp:
 
