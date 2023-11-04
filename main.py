@@ -80,7 +80,7 @@ class MultiApp:
                 options=pages,
                 icons=['house-fill', 'person-circle', 'info-circle-fill', 'chat-fill', 'trophy-fill'],
                 menu_icon='chat-text-fill',
-                default_index=1,
+                default_index=0,
                 styles={
                     "container": {"padding": "5!important", "background-color": 'black'},
                     "icon": {"color": "white", "font-size": "23px"},
