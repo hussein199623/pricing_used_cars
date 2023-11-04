@@ -17,7 +17,7 @@ def app():
     fig=px.bar(trans_number,x='transmission',y='manufacturer',color=trans_number['transmission'])
     # plt.title('Number of transmission in each manufacturer',fontsize=26)
     st.plotly_chart(fig)
-    st.write('1- the most manufacturer has bigest number of are Kia=35 and Ford=35 kind of transmissions, so they have beggest number fo options')
+    st.write('1- the most manufacturer has bigest number of transmission are Kia=35 and Ford=35 kind of transmissions, so they have beggest number fo options')
     st.write('2- on the other hand Tsla and RAM has the lowest number of transmission Tesla = 5 and RAM=13')
 
 
