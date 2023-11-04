@@ -10,7 +10,7 @@ def app():
     df=pd.read_csv('new_data_cars.csv')
 
     st.header('Bar chart')
-    st.subheader('***How many transimission in each manufacturer, and how has the most option***')
+    st.subheader('***How many transimission in each manufacturer, and who has the most option***')
     trans_number= df.groupby('manufacturer')['transmission'].nunique().to_frame().reset_index().sort_values(by='transmission',ascending=False)
 
     # fig=plt.figure(figsize=(20,10))
