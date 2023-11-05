@@ -59,7 +59,7 @@ def app():
     
 
     st.write('her is the most popular kinds of transmission and there prices')
-    st.write(trans)
+    
 
     st.header('Line Chart')
     st.subheader('what is the rate of chang in the price over years')
@@ -75,7 +75,8 @@ def app():
 
     # Display the plot using Streamlit
     st.pyplot(fig)
-
+      st.write('We figure out that the cars more older the price is going up,and the modern cars  ')
+    st.write('But the cars that in the middle of period 2002 to 2012 has the lowest price ')
 
 
 
