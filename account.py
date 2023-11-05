@@ -1,5 +1,5 @@
 import streamlit as st 
-@st.cache_data
+
 def app():
     st.title('My information ')
     number = st.button('Phon Number')
