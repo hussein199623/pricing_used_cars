@@ -28,13 +28,13 @@ def app():
    # max_price = 65500
 
    # Create a slider for selecting the price range
-   selected_price_range = st.slider('Select Price Range', min_value=min_price, max_value=max_price, value=(min_price, max_price))
+   # selected_price_range = st.slider('Select Price Range', min_value=min_price, max_value=max_price, value=(min_price, max_price))
 
-   # Filter the car dataset based on the selected price range
-   filtered_cars = filter_cars_by_price(df, selected_price_range[0], selected_price_range[1])
+   # # Filter the car dataset based on the selected price range
+   # filtered_cars = filter_cars_by_price(df, selected_price_range[0], selected_price_range[1])
 
-   # Display the filtered dataset
-   st.write(filtered_cars[['manufacturer', 'model', 'drivetrain', 'price']])
+   # # Display the filtered dataset
+   # st.write(filtered_cars[['manufacturer', 'model', 'drivetrain', 'price']])
 
 
    
