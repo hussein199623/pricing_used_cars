@@ -3,7 +3,7 @@
 import streamlit as st
 import pandas as pd 
 
-@st.cache_data
+@st.cache
 def load_data():
     df = pd.read_csv("new_data_cars.csv")
     return df
