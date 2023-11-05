@@ -9,9 +9,10 @@ def load_data():
     return df
 
 def remove_invalid_rows(df):
-    df = df.replace(0, pd.NA)
+    df = df.mask(df == 0, pd.NA)
     df = df.dropna()
     return df
+
 
 def app():
     st.title('Pricing Used cars')
