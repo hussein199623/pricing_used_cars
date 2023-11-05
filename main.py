@@ -3,8 +3,9 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 
-@st.cache_data
+
 st.set_page_config(page_title="Main Menu")
+@st.cache_data
 
 pages = ['Home', 'Account', 'About', 'Analysis', 'Prediction']
 
