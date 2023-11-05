@@ -75,7 +75,7 @@ def app():
 
     # Display the plot using Streamlit
     st.pyplot(fig)
-      st.write('We figure out that the cars more older the price is going up,and the modern cars  ')
+    st.write('We figure out that the cars more older the price is going up,and the modern cars  ')
     st.write('But the cars that in the middle of period 2002 to 2012 has the lowest price ')
 
 
