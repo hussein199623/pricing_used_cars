@@ -4,7 +4,7 @@ import seaborn as sns
 import plotly.express as px 
 import matplotlib.pyplot as plt 
 
-
+@st.cache_data
 def app():
     st.title('Data Analysis')
     df=pd.read_csv('new_data_cars.csv')
