@@ -61,7 +61,7 @@ def app():
     df = load_data()
 
     # Resize the image to reduce load time
-    st.image('photo.jpg', width=300, use_column_width=True)
+    st.image('photo2.jpg', width=300, use_column_width=True)
 
     st.subheader("1. Delving into a dataset from a leading American used car sales site, my analysis uncovers key market trends and consumer behavior.")
     st.subheader("2. With a profound grasp of the business intricacies, I developed a cutting-edge predictive model leveraging machine learning to accurately forecast used car prices.")
