@@ -44,7 +44,7 @@
 import streamlit as st
 import pandas as pd
 
-# Load the data outside the cache function
+# Load the data outside the app to avoid repeated reads
 @st.cache
 def load_data():
     columns = ['manufacturer', 'model', 'drivetrain', 'price']
@@ -72,9 +72,11 @@ def app():
 
     selected_price_range = st.slider('Select Price Range', min_value=min_price, max_value=max_price, value=(min_price, max_price))
 
+    # Filter the DataFrame in memory
     filtered_cars = filter_cars_by_price(df, selected_price_range[0], selected_price_range[1])
 
-    st.write(filtered_cars)
+    # Display the filtered DataFrame using st.dataframe for better performance
+    st.dataframe(filtered_cars)
 
 # Run the app
 if __name__ == '__main__':
