@@ -63,7 +63,13 @@ def app():
     # Resize the image to reduce load time
     st.image('photo.jpg', width=300, use_column_width=True)
 
-    st.subheader("***Exploring a dataset sourced from a prominent American used car sales site, my analysis unveils valuable insights into market trends and consumer preferences. With a comprehensive understanding of the business dynamics, I crafted a predictive model that harnesses machine learning to accurately forecast the prices of used cars. This innovative approach not only empowers buyers and sellers with informed decisions but also enhances the overall user experience on the platform, making it a go-to destination for reliable and data-driven transactions.'***")
+    st.subheader("***1- Delving into a dataset from a leading American used car sales site, my analysis uncovers key market trends and consumer behavior.***
+
+***2- With a profound grasp of the business intricacies, I developed a cutting-edge predictive model leveraging machine learning to accurately forecast used car prices.***
+
+***3- This model not only empowers users with informed decision-making but also enhances the overall transactional experience on the platform.***
+
+***4- Elevating the site into a trusted destination, my work ensures reliable, data-driven transactions for both buyers and sellers alike***")
 
     # st.header('***Put the range of the price and you will get [Manufacturer name, drivetrain, model]***')
 
