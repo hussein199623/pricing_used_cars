@@ -5,6 +5,7 @@ def app():
     number = st.button('Phon Number')
     if number :
         st.write('01010036764')
+        st.write('01550166982')
     linked = st.button('LinkedIn')
     if linked:
         st.write('https://www.linkedin.com/in/husseinalzeer7/')
