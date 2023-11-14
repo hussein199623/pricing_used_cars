@@ -63,20 +63,20 @@ def app():
     # Resize the image to reduce load time
     st.image('photo.jpg', width=300, use_column_width=True)
 
-    st.subheader("***'We have data about the price for used cars obtained from a site for selling used cars'***")
+    st.subheader("***'We have data about the price for used cars obtained from a site for selling used cars in America'***")
 
-    st.header('***Put the range of the price and you will get [Manufacturer name, drivetrain, model]***')
+    # st.header('***Put the range of the price and you will get [Manufacturer name, drivetrain, model]***')
 
-    min_price = 260
-    max_price = 65500
+    # min_price = 260
+    # max_price = 65500
 
-    selected_price_range = st.slider('Select Price Range', min_value=min_price, max_value=max_price, value=(min_price, max_price))
+    # selected_price_range = st.slider('Select Price Range', min_value=min_price, max_value=max_price, value=(min_price, max_price))
 
-    # Filter the DataFrame in memory
-    filtered_cars = filter_cars_by_price(df, selected_price_range[0], selected_price_range[1])
+    # # Filter the DataFrame in memory
+    # filtered_cars = filter_cars_by_price(df, selected_price_range[0], selected_price_range[1])
 
-    # Display the filtered DataFrame using st.dataframe for better performance
-    st.dataframe(filtered_cars)
+    # # Display the filtered DataFrame using st.dataframe for better performance
+    # st.dataframe(filtered_cars)
 
 # Run the app
 if __name__ == '__main__':
