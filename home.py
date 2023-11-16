@@ -55,15 +55,11 @@ def filter_cars_by_price(df, min_price, max_price):
     return df[(df['price'] >= min_price) & (df['price'] <= max_price)]
 
 def app():
-    # st.title("Pricing Used Cars")
+    st.title("Pricing Used Cars")
     
     # Load the data
     df = load_data()
-      st.markdown(
-        """
-        <h1 style='text-align: center;'>Pricing Used Cars</h1>
-        """,
-        unsafe_allow_html=True
+      
 
     # Resize the image to reduce load time
     st.image('photo2.jpg', width=300, use_column_width=True)
