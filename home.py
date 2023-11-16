@@ -59,11 +59,11 @@ def app():
     
 
 
-    st.markdown(
-    """
-    <h1 style='text-align: center;'>Pricing Used Cars</h1>
-    """,
-    unsafe_allow_html=True
+        st.markdown(
+        """
+        <h1 style='text-align: center;'>Pricing Used Cars</h1>
+        """,
+        unsafe_allow_html=True
 
 
     # Load the data
