@@ -58,23 +58,12 @@ def app():
     # st.title("Pricing Used Cars")
     
 
-# Add custom HTML and CSS to center the title
+
     st.markdown(
-        """
-        <style>
-            .center {
-                display: flex;
-                # justify-content: center;
-                # align-items: center;
-                height: 100vh;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    # Centered title
-    st.markdown('<h1 class="center">Pricing Used Cars</h1>', unsafe_allow_html=True)
+    """
+    <h1 style='text-align: center;'>Pricing Used Cars</h1>
+    """,
+    unsafe_allow_html=True
 
 
     # Load the data
